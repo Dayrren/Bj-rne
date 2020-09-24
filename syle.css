@@ -1,0 +1,123 @@
+body {
+
+    background-color: #011123;
+    color: lightgray;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: monospace;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    background-color: be;
+}
+
+
+li {
+    font-size: 14px;
+}
+
+
+#people,#economy {
+	display: inline-block;
+	padding-left: 0;
+	list-style: none;
+    border-left: solid blue 10px;
+    margin-left: 10px;
+    width: 30%;
+    min-width: 400px;
+}
+
+#people li {
+	margin-right: 10px;
+}
+
+a:active ,a{
+    color: lightgray;
+    text-decoration: none;
+ }
+
+
+
+#economy li {
+	margin-bottom: 1px;
+    
+}
+
+.fieldset {
+	border-style: none;
+    margin: 20px;
+
+}
+
+button {
+	margin: 30px 25px 0 0;
+	padding: 10px 15px;
+}
+
+.slider {
+    width: 90%;
+}
+
+button{
+}
+#hedermen {
+    display: table;
+    width: 100%;
+    text-align: center;
+    background-color: dimgrey;
+    position: sticky;
+    top: 0px;
+}
+
+#hedermen ul{
+    min-width: 50%;
+    text-align: center;
+    align-self: center;
+   
+}
+
+
+#hedermen li{
+    display: inline;
+    list-style: none;
+    padding: 1vW;
+}
+
+#hedermen a li{
+    font-size: 2vw;
+}
+
+#hedermen a:hover li{
+    color:darkblue;
+}
+
+
+#spel2 {
+
+    display: grid;
+    grid-template-areas:
+        "head eco",
+        " bob"     
+}
+
+#spel2 ul li{
+    font-size: 2vh;
+}
+
+
+h1 {
+    margin-top: 1in;
+    font-size: 30px;
+}
+
+h2 {
+    color: aquamarine;
+    margin-top:5vh;
+    font-size:24px;
+}
+
+legend {
+    font-size: 2vh;
+}
