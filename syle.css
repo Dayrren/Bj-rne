@@ -13,11 +13,9 @@ body {
     background-color: be;
 }
 
-
 li {
     font-size: 14px;
 }
-
 
 #people,#economy {
 	display: inline-block;
@@ -26,7 +24,7 @@ li {
     border-left: solid blue 10px;
     margin-left: 10px;
     width: 30%;
-    min-width: 400px;
+    min-width: 500px;
 }
 
 #people li {
@@ -37,7 +35,6 @@ a:active ,a{
     color: lightgray;
     text-decoration: none;
  }
-
 
 
 #economy li {
@@ -60,8 +57,6 @@ button {
     width: 90%;
 }
 
-button{
-}
 #hedermen {
     display: table;
     width: 100%;
@@ -78,7 +73,6 @@ button{
    
 }
 
-
 #hedermen li{
     display: inline;
     list-style: none;
@@ -93,7 +87,6 @@ button{
     color:darkblue;
 }
 
-
 #spel2 {
 
     display: grid;
@@ -105,7 +98,6 @@ button{
 #spel2 ul li{
     font-size: 2vh;
 }
-
 
 h1 {
     margin-top: 1in;
@@ -120,4 +112,13 @@ h2 {
 
 legend {
     font-size: 2vh;
+}
+
+@media(max-width:960px){
+    #hedermen a li{
+        font-size: 4vw;
+    }
+    #hedermen li{
+        padding: 2vw;
+    }
 }
