@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Hammurabi</title>
+		<link rel="stylesheet" type="text/css" href="syle.css">
+		<script type="text/javascript" src="script.js">
+		</script>
+	</head>
+
+	<body onload="gameStart();">
+        
+        <div id="hedermen">
+            <ul>
+                <a href="#spelet">
+                    <li>Spelet</li>
+                </a>
+                <a href="#vem">
+                    <li>Vem var Hamurabi</li>
+                </a>
+                <a href="#regler">
+                    <li>Spelregler</li>
+                </a>
+
+            </ul>
+        </div>
+        
+        <div class = "content" id="spelet">
+            <div id="spel2">
+                <h1>Den Store Hammurabi!</h1>
+                <h2 id="year">The report for year:</h2>
+                <ul id="people">
+                    <li id="starved">Starved:</li>
+                    <li id="newcomers">Newcomers:</li>
+                    <li id="population">Population:</li>
+                </ul>
+                <ul id="economy">
+                    <li id="acres">Acres:</li>
+                    <li id="bushels">Bushels:</li>
+                    <li id="harvest">Harvest:</li>
+                    <li id="rats">Rats:</li>
+                    <li id="price">Price:</li>
+                </ul>
+            </div>
+
+            <form>
+                <fieldset class="fieldset">
+                <legend>Tunnland som ska säljas/köpas: <span id="outputAcrestosellbuy"></span></legend>
+                <input type="button" value="-" id="minusbuttonAcrestosellbuy" onclick="onChangeAcres('minusbuttonAcrestosellbuy');">
+                <input type="range" id="sliderAcrestosellbuy" class="slider" onchange="onChangeAcres('sliderAcrestosellbuy');">
+                <input type="button" value="+" id="plusbuttonAcrestosellbuy" onclick="onChangeAcres('plusbuttonAcrestosellbuy');">
+                </fieldset>
+                <fieldset class="fieldset">
+                <legend>Feed people: <span id="outputFeedpeople"></span></legend>
+                <input type="button" value="-" id="minusbuttonFeedpeople" onclick="onChangeFeeding('minusbuttonFeedpeople');">
+                <input type="range" id="sliderFeedpeople" class="slider" onchange="onChangeFeeding('sliderFeedpeople');">
+                <input type="button" value="+" id="plusbuttonFeedpeople" onclick="onChangeFeeding('plusbuttonFeedpeople');">
+                </fieldset>
+                <fieldset class="fieldset">
+                <legend>Plantera med utsäde: <span id="outputPlantwithseed"></span></legend>
+                <input type="button" value="-" id="minusbuttonPlantwithseed" onclick="onChangePlanting('minusbuttonPlantwithseed');">
+                <input type="range" id="sliderPlantwithseed" class="slider" onchange="onChangePlanting('sliderPlantwithseed');">
+                <input type="button" value="+" id="plusbuttonPlantwithseed" onclick="onChangePlanting('plusbuttonPlantwithseed');">
+                </fieldset>
+                <button type="button" onclick="gameStart();">Restart</button>
+                <button type="button" onclick="finishTurn();">Det är min order!</button>
+            </form>
+            <div>
+                <h2>Den grundläggande strategin:</h2>
+                <ul>
+                    <li>
+                        Börja med att försöka mata folket.
+                        Varje person konsumerar 20 skäppor .
+
+                    </li>
+                    <li>
+                        Try to plant seeds on all of your land,
+                        assuming you have enough people and enough grain.
+                    </li>
+                    <li>
+                        Last, if you have grain remaining,
+                        you might spend some buying additional acres of land,
+                        especially if the price is right.
+                    </li>
+                    <li>
+                        If you didn't have enough grain for food and seed,
+                        you may need to sell some of your land,
+                        hopefully, at a good price.
+                    </li>
+                </ul>
+
+            </div>
+            
+        </div>
+
+        <div class = "content" id="regler">
+            <h2>Regler:</h2>
+            <ul>
+                <li>
+                    Spelet varar 10 år, då varge år är em runda. 
+                </li>
+                <li>
+                    Each year,
+                    enter how many skäppor  of grain to allocate to buying
+                    (or selling) acres of land, feeding your population,
+                    and planting crops for the next year.
+
+                </li>
+                <li>
+                    Each person needs 20 skäppor  of grain each year to
+                    live and can till at most 10 acres of land.                 
+                </li>
+                <li>
+                    Each acre of land requires one
+                    bushel of grain to plant seeds.         
+                </li>
+                <li>
+                    The price of each acre of land fluctuates from 17 skäppor 
+                    per acre to 26 skäppor .
+                </li>
+                <li>
+                    If the conditions in your country ever become bad enough,
+                    the people will overthrow you and you won't finish your
+                    10 year term.
+                </li>
+                <li>
+                    If you make it to the 11th year, your rule will be
+                    evaluated and you'll be ranked against great figures
+                    in history.
+                </li>
+            </ul>
+        </div>
+
+        <div class = "content" id="vem">
+
+
+        </div>
+        
+        <div class = "content">
+            <ul>
+                <li><a href=http://www.sm.luth.se/csee/courses/d0015e/f-webben/Hammurabi-Regler-mm.html></a>Regler och stratergi</li>
+                <li>
+                    Each year,
+                    enter how many skäppor  of grain to allocate to buying
+                    (or selling) tunnland of land, feeding your population,
+                    and planting crops for the next year.
+
+                </li>
+                <li>
+                    Each person needs 20 skäppor  of grain each year to
+                    live and can till at most 10 acres of land.                 
+                </li>
+                <li>
+                    Each acre of land requires one
+                    bushel of grain to plant seeds.         
+                </li>
+                <li>
+                    The price of each acre of land fluctuates from 17 skäppor
+                    per acre to 26 skäppor.
+                </li>
+                <li>
+                    If the conditions in your country ever become bad enough,
+                    the people will overthrow you and you won't finish your
+                    10 year term.
+                </li>
+                <li>
+                    If you make it to the 11th year, your rule will be
+                    evaluated and you'll be ranked against great figures
+                    in history.
+                </li>
+            </ul>
+            
+        </div>
+  
+	</body>
+
+</html>
