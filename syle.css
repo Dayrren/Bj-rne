@@ -39,12 +39,12 @@ a:active ,a{
 }
 
 .fieldset {
-	border-style: none;
-    margin: 20px;
+    border-style: none;
+    margin: 25px;
 }
 
 button {
-	margin: 30px 25px 0 0;
+ 	margin: 30px 25px 0 0;
 	padding: 10px 15px;
 }
 
