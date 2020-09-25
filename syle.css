@@ -1,3 +1,4 @@
+/*Isak Forsgren 010709-5473*/
 body {
 
     background-color: #011123;
@@ -64,7 +65,6 @@ button {
     min-width: 50%;
     text-align: center;
     align-self: center;
-   
 }
 
 #hedermen li{
@@ -86,7 +86,7 @@ button {
     display: grid;
     grid-template-areas:
         "head eco",
-        " bob"     
+        "bob"     
 }
 
 #spel2 ul li{
@@ -108,11 +108,11 @@ legend {
     font-size: 2vh;
 }
 
-@media(max-width:960px){
+@media (max-width:960px){
     #hedermen a li{
         font-size: 4vw;
     }
-    #hedermen li{
+    #hedermen a li{
         padding: 2vw;
     }
 }
