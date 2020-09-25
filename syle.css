@@ -27,25 +27,19 @@ li {
     min-width: 500px;
 }
 
-#people li {
-	margin-right: 10px;
+#people li, #economy li {
+    margin-right: 10px;
+    margin-bottom: 1px;
 }
 
 a:active ,a{
     color: lightgray;
-    text-decoration: none;
- }
-
-
-#economy li {
-	margin-bottom: 1px;
-    
+    text-decoration: none;   
 }
 
 .fieldset {
 	border-style: none;
     margin: 20px;
-
 }
 
 button {
